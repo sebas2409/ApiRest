@@ -143,5 +143,7 @@ var daniel = model.Alumno{
 var listaAlumnos = []model.Alumno{sebas, rafa, victor, daniel}
 
 func RequestHandler(c *gin.Context) {
+	c.Header("Access-Control-Allow-Origin", "*")
+	c.Header("Access-Control-Allow-Credentials", "true")
 	c.JSON(http.StatusOK, listaAlumnos)
 }
