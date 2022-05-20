@@ -11,11 +11,11 @@ var bdRafa = model.Notas{
 	Asignatura: "Base de datos",
 	Notas:      8,
 }
-var bdMario = model.Notas{
+var bdDaniel = model.Notas{
 	Asignatura: "Base de datos",
 	Notas:      9,
 }
-var bdDiego = model.Notas{
+var bdVictor = model.Notas{
 	Asignatura: "Base de datos",
 	Notas:      5,
 }
@@ -29,11 +29,11 @@ var lmRafa = model.Notas{
 	Asignatura: "Lenguaje de marcas",
 	Notas:      9,
 }
-var lmMario = model.Notas{
+var lmDaniel = model.Notas{
 	Asignatura: "Lenguaje de marcas",
 	Notas:      6,
 }
-var lmDiego = model.Notas{
+var lmVictor = model.Notas{
 	Asignatura: "Lenguaje de marcas",
 	Notas:      10,
 }
@@ -47,11 +47,11 @@ var folRafa = model.Notas{
 	Asignatura: "Fol",
 	Notas:      7,
 }
-var folMario = model.Notas{
+var folDaniel = model.Notas{
 	Asignatura: "Fol",
 	Notas:      7,
 }
-var folDiego = model.Notas{
+var folVictor = model.Notas{
 	Asignatura: "Fol",
 	Notas:      8,
 }
@@ -65,11 +65,11 @@ var proRafa = model.Notas{
 	Asignatura: "Programacion",
 	Notas:      6,
 }
-var proMario = model.Notas{
+var proDaniel = model.Notas{
 	Asignatura: "Programacion",
 	Notas:      5,
 }
-var proDiego = model.Notas{
+var proVictor = model.Notas{
 	Asignatura: "Programacion",
 	Notas:      8,
 }
@@ -83,11 +83,11 @@ var siRafa = model.Notas{
 	Asignatura: "Sistemas Informaticos",
 	Notas:      7,
 }
-var siMario = model.Notas{
+var siDaniel = model.Notas{
 	Asignatura: "Sistemas Informaticos",
 	Notas:      7,
 }
-var siDiego = model.Notas{
+var siVictor = model.Notas{
 	Asignatura: "Sistemas Informaticos",
 	Notas:      6,
 }
@@ -101,11 +101,11 @@ var edRafa = model.Notas{
 	Asignatura: "Entornos de desarrollo",
 	Notas:      7,
 }
-var edMario = model.Notas{
+var edDaniel = model.Notas{
 	Asignatura: "Entornos de desarrollo",
 	Notas:      6,
 }
-var edDiego = model.Notas{
+var edVictor = model.Notas{
 	Asignatura: "Entornos de desarrollo",
 	Notas:      5,
 }
@@ -127,20 +127,20 @@ var rafa = model.Alumno{
 	Curso:  "1 DAM",
 	Notas:  []model.Notas{bdRafa, lmRafa, folRafa, proRafa, siRafa, edRafa},
 }
-var diego = model.Alumno{
+var victor = model.Alumno{
 	Id:     3,
-	Nombre: "Diego Gomez",
+	Nombre: "Victor Sanchez",
 	Curso:  "1 DAM",
-	Notas:  []model.Notas{bdDiego, lmDiego, folDiego, proDiego, siDiego, edDiego},
+	Notas:  []model.Notas{bdVictor, lmVictor, folVictor, proVictor, siVictor, edVictor},
 }
-var mario = model.Alumno{
+var daniel = model.Alumno{
 	Id:     4,
-	Nombre: "Mario Valverde",
+	Nombre: "Daniel Valverde",
 	Curso:  "1 DAM",
-	Notas:  []model.Notas{bdMario, lmMario, folMario, proMario, siMario, edMario},
+	Notas:  []model.Notas{bdDaniel, lmDaniel, folDaniel, proDaniel, siDaniel, edDaniel},
 }
 
-var listaAlumnos = []model.Alumno{sebas, rafa, diego, mario}
+var listaAlumnos = []model.Alumno{sebas, rafa, victor, daniel}
 
 func RequestHandler(c *gin.Context) {
 	c.JSON(http.StatusOK, listaAlumnos)
