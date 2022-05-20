@@ -135,7 +135,7 @@ var victor = model.Alumno{
 }
 var daniel = model.Alumno{
 	Id:     4,
-	Nombre: "Daniel Valverde",
+	Nombre: "Daniel",
 	Curso:  "1 DAM",
 	Notas:  []model.Notas{bdDaniel, lmDaniel, folDaniel, proDaniel, siDaniel, edDaniel},
 }
